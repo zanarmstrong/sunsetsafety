@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Sunset Traffic Injuries</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #2b2b2b;
+    --muted: #6e6e6e;
+    --rule: #e2e2e2;
+    --purple: #5b39c4;
+    --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 40px 56px;
+  }
+  main { max-width: 1120px; margin: 0 auto; }
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+  @media (max-width: 760px) { .charts { grid-template-columns: 1fr; } }
+  figure { margin: 0; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+  figcaption { font-size: 13.5px; color: var(--muted); max-width: 60ch; }
+  figcaption b { color: var(--fg); font-weight: 600; }
+  a { color: var(--purple); text-underline-offset: 2px; word-break: break-word; }
+  a:focus-visible { outline: 2px solid var(--purple); outline-offset: 2px; }
+</style>
+
+<main>
+  <div class="charts">
+    <figure>
+      <img src="d4-traffic-injuries-vertical.png" width="1080" height="1350"
+           alt="Bar chart of people injured or killed in traffic in the Sunset (D4), 2014–2025. Average 179 per year with the Upper Great Highway open to cars (2014–2019); average 136 since (2020–2025); 127 in 2025.">
+      <figcaption>
+        <b>Source:</b> DataSF, “Traffic Crashes Resulting in Injury” (dataset ID ubvf-ztfx),
+        <a href="https://data.sf.gov/Public-Safety/Traffic-Crashes-Resulting-in-Injury/ubvf-ztfx" target="_blank" rel="noopener">data.sf.gov/Public-Safety/Traffic-Crashes-Resulting-in-Injury/ubvf-ztfx</a>.
+        Data current as of Oct 20, 2026.
+        <b>Metric:</b> People hurt (injured or killed) = number_injured + number_killed, summed by calendar year for crashes in supervisor_district 4 (the Sunset), 2014–2025. Averages cover 2014–2019 and 2020–2025.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="districts-compared-vertical.png" width="1080" height="1350"
+           alt="Slope chart comparing people injured in traffic by SF supervisor district in the 12 months before and after Sunset Dunes opened. The Sunset (D4) had the fewest in both periods: 133 before, 124 after.">
+      <figcaption>
+        <b>Source:</b> DataSF, “Traffic Crashes Resulting in Injury” (dataset ID ubvf-ztfx),
+        <a href="https://data.sf.gov/Public-Safety/Traffic-Crashes-Resulting-in-Injury/ubvf-ztfx" target="_blank" rel="noopener">data.sf.gov/Public-Safety/Traffic-Crashes-Resulting-in-Injury/ubvf-ztfx</a>.
+        Data current as of Oct 20, 2026.
+        <b>Metric:</b> People hurt (injured or killed) = number_injured + number_killed, summed for each supervisor district (current 2022 boundaries). Crashes with no district are excluded.
+        <b>Time periods:</b> On March 14, 2025, the Upper Great Highway closed to cars and became park space available to the public 24/7 (official opening ceremony for Sunset Dunes: April 12, 2025). “12 months before Sunset Dunes” is March 14, 2024 – March 13, 2025; “12 months since Sunset Dunes” is March 14, 2025 – March 13, 2026 (365 days each).
+      </figcaption>
+    </figure>
+  </div>
+</main>
+
+</body></html>
